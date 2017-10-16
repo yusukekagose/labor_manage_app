@@ -12,7 +12,7 @@ class User < ApplicationRecord
 
   validates_format_of :phone, with: PHONE_REGEX
 
-  validates :phone, length: { is: 11 }
+  validates :phone, length: { is: 12 }
 
   def full_name
     last_name.upcase + ", " + first_name.upcase
