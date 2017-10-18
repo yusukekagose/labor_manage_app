@@ -28,12 +28,12 @@ RSpec.describe User, type: :model do
     end
 
     it 'requires the phone attr to only contain integers' do
-      @user.phone = 'mygreatstre'
+      @user.phone = 'mygreatstr'
       expect(@user).to_not be_valid
     end
 
-    it 'requires the phone attr to only have 10 chars' do
-      @user.phone = '123456789012'
+    it 'requires the phone attr to only have 12 chars' do
+      @user.phone = '1234567890'
       expect(@user).to_not be_valid
     end
   end

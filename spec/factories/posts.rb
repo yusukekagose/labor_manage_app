@@ -12,5 +12,4 @@ FactoryGirl.define do
     overtime_request 0.5
     user
   end
-
 end
