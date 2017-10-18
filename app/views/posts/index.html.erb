@@ -4,23 +4,19 @@
   <thead>
     <tr>
       <th>
-        #
-      </th>
-      <th>
-        Overtime Request
+        Overtime Requested
       </th>
       <th>
         Date
       </th>
-      <th>
-        User
-      </th>
-      <th>
+      <th class='hidden-xs'>
         Rationale
       </th>
       <th>
         Status
       </th>
+      <th></th>
+      <th></th>
     </tr>
   </thead>
   <tbody id="posts">
@@ -29,5 +25,5 @@
 </table>
 
 <div id="paginator">
-<%= paginate @posts, remote: true %>
+  <%= paginate @posts, remote: true %>
 </div>
