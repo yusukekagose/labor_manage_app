@@ -42,7 +42,6 @@ class ApplicationPolicy
     ['AdminUser']
   end
 
-
   class Scope
     attr_reader :user, :scope
 
